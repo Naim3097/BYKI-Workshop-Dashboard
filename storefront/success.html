@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Payment · MNA Dynamic Torque</title>
+<meta name="theme-color" content="#050b1c" />
+<meta name="robots" content="noindex" />
+<link rel="icon" type="image/png" href="assets/mna-logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,600;0,700;0,800;1,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/shop.css" />
+</head>
+<body>
+
+<div data-mount="header"></div>
+
+<section class="page-head"><div class="wrap">
+  <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><a href="shop.html">Spare Parts</a><span>/</span><span>Payment</span></div>
+  <h1>Payment <span class="chrome">Status</span></h1>
+</div></section>
+
+<div class="wrap">
+  <div id="payRoot" style="max-width:520px;margin:0 auto 80px"></div>
+</div>
+
+<div data-mount="footer"></div>
+
+<script src="assets/catalog.js"></script>
+<script src="assets/shop.js"></script>
+<script>
+(function(){
+  var C = window.MNACatalog, S = window.MNAShop;
+  S.mountChrome('shop');
+  var root = document.getElementById('payRoot');
+  var backend = (C.backendUrl || '').replace(/\/$/, '');
+  var ref = new URLSearchParams(location.search).get('ref') || '';
+
+  function card(title, body, tone){
+    return '<div class="summary" style="text-align:center">'+
+      '<div class="tag '+(tone||'')+'" style="margin:0 auto 12px">'+title+'</div>'+
+      '<p style="color:var(--dim)">'+body+'</p>'+
+      (ref ? '<p style="font-size:12px;color:var(--dim);margin-top:10px">Reference '+ref+'</p>' : '')+
+      '<a class="btn btn-cyan btn-block" href="index.html#parts" style="margin-top:16px">Back to shop</a>'+
+      '</div>';
+  }
+
+  if (!ref){ root.innerHTML = card('No reference', 'We could not find a payment reference.', 'tag-out'); return; }
+
+  var tries = 0, done = false;
+  function check(){
+    fetch(backend + '/api/payments/status?ref=' + encodeURIComponent(ref), { cache:'no-store' })
+      .then(function(r){ return r.json(); })
+      .then(function(d){
+        if (done) return;
+        if (d && d.paymentStatus === 'SUCCESS'){
+          done = true;
+          S.clear();
+          root.innerHTML = card('Payment successful', 'Thank you. Your order is confirmed and our team has been notified.', 'tag-stock');
+        } else if (d && (d.paymentStatus === 'FAILED' || d.paymentStatus === 'CANCELLED')){
+          done = true;
+          root.innerHTML = card('Payment not completed', 'The payment was cancelled or failed. You can try again from your cart.', 'tag-out');
+        }
+      })
+      .catch(function(){});
+  }
+
+  root.innerHTML = card('Checking payment', 'Confirming your payment, this takes a few seconds…', 'tag-low');
+  check();
+  var timer = setInterval(function(){
+    tries++;
+    if (done || tries > 20){ clearInterval(timer); return; }
+    check();
+  }, 1500);
+})();
+</script>
+</body>
+</html>
