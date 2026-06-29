@@ -6,6 +6,14 @@
   --font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
   --font-head: 'Saira', 'Inter', sans-serif;
   --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  /* Shared @byki/core commerce/ui components are themed via these vars (MNA cyan). */
+  --accent: #34b9f0;
+  --accent-2: #1f8fc4;
+  --accent-glow: rgba(52, 185, 240, 0.28);
+  --bg: #050b1c;
+  --bg-raised: #0b1a3a;
+  --fg: #eaf4ff;
 }
 
 html,
@@ -97,4 +105,36 @@ input[type='number'] {
   .eyebrow {
     @apply font-mono text-xs uppercase tracking-widest text-brand;
   }
+}
+
+/* ── Surfaces used by shared @byki/core ui/commerce components ── */
+.glass {
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+.glass-hover:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.12);
+}
+.card-red {
+  background: linear-gradient(160deg, rgba(236, 28, 36, 0.1), rgba(236, 28, 36, 0.02) 60%, transparent);
+  border: 1px solid rgba(236, 28, 36, 0.2);
+}
+
+/* ── Storefront text treatments (chrome wordmark + red-italic accent) ── */
+.mna-chrome {
+  background: linear-gradient(180deg, #ffffff 0%, #dcefff 26%, #bfe0ff 46%, #6fa6da 54%, #a9d2f5 70%, #7fb0df 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 1px rgba(2, 8, 20, 0.6)) drop-shadow(0 0 18px rgba(52, 185, 240, 0.25));
+}
+.mna-red-italic {
+  color: #ec1c24;
+  font-style: italic;
+  font-weight: 800;
+  text-shadow: 0 1px 0 #b3141b, 0 0 22px rgba(236, 28, 36, 0.35);
 }

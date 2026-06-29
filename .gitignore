@@ -27,3 +27,6 @@
 .DS_Store
 Thumbs.db
 *.log
+
+# Original template drop (nested git repo) — local reference only, not tracked
+Overhaulinyard/

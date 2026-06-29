@@ -83,7 +83,9 @@ export async function createOrder(workshopId: string, input: CreateOrderInput): 
     .from('orders')
     .insert({
       workshop_id: workshopId,
-      customer_id: input.customerId ?? null,
+      // Only set when known — so checkout still works before migration 0003
+      // (which adds the customer_id column) is applied.
+      ...(input.customerId ? { customer_id: input.customerId } : {}),
       invoice_ref: input.invoiceRef,
       channel: input.channel,
       customer_name: input.customerName,

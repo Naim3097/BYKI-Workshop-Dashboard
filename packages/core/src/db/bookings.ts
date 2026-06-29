@@ -68,7 +68,9 @@ export async function createBooking(
     .from('bookings')
     .insert({
       workshop_id: workshopId,
-      customer_id: input.customerId ?? null,
+      // Only set when known — so booking still works before migration 0003
+      // (which adds the customer_id column) is applied.
+      ...(input.customerId ? { customer_id: input.customerId } : {}),
       invoice_ref: input.invoiceRef,
       service_type: input.serviceType,
       customer_name: input.customerName,

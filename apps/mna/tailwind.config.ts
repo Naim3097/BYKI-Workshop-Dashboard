@@ -3,7 +3,12 @@ import type { Config } from 'tailwindcss'
 // Design tokens mirror the bengkelgearbox.my storefront (assets/shop.css) so the
 // owner area and the storefront share one dark navy + cyan system.
 const config: Config = {
-  content: ['./app/**/*.{ts,tsx}', './components/**/*.{ts,tsx}'],
+  content: [
+    './app/**/*.{ts,tsx}',
+    './components/**/*.{ts,tsx}',
+    // Scan @byki/core so the shared commerce/ui component classes aren't purged.
+    '../../packages/core/src/**/*.{ts,tsx}',
+  ],
   theme: {
     extend: {
       colors: {
