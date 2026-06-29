@@ -1,0 +1,50 @@
+{
+  "name": "@byki/core",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Shared backend, diagnose engines, admin, and UI for all BYKI workshop sites",
+  "type": "module",
+  "exports": {
+    "./types": "./src/types/index.ts",
+    "./config": "./src/config/index.ts",
+    "./format": "./src/format.ts",
+    "./supabase/client": "./src/supabase/client.ts",
+    "./supabase/admin": "./src/supabase/admin.ts",
+    "./db": "./src/db/index.ts",
+    "./payments": "./src/payments/index.ts",
+    "./commerce": "./src/commerce/index.ts",
+    "./auth": "./src/auth/index.ts",
+    "./auth/client": "./src/auth/client.ts",
+    "./auth/middleware": "./src/auth/middleware.ts",
+    "./admin": "./src/admin/index.tsx",
+    "./admin/handlers": "./src/admin/handlers.ts",
+    "./byki": "./src/byki/index.ts",
+    "./ui": "./src/ui/index.tsx",
+    "./diagnose": "./src/diagnose/index.ts",
+    "./diagnose/obd": "./src/diagnose/obd/index.ts",
+    "./diagnose/obd-scanner": "./src/diagnose/obd-scanner.tsx",
+    "./diagnose/cvt-sim": "./src/diagnose/cvt-sim/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@supabase/ssr": "^0.5.2",
+    "@supabase/supabase-js": "^2.45.0",
+    "date-fns": "^4.1.0",
+    "zustand": "^5.0.5"
+  },
+  "peerDependencies": {
+    "next": "^15.3.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@byki/config": "workspace:*",
+    "@types/node": "^22.15.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "@types/web-bluetooth": "^0.0.21",
+    "typescript": "^5.8.3"
+  }
+}

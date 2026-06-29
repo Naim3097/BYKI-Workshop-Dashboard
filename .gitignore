@@ -3,6 +3,8 @@
 **/.next/
 **/out/
 **/build/
+**/dist/
+**/.turbo/
 
 # Local file-backed store (mockup data)
 **/.data/

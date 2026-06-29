@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+/* BYKI brand palette (BRAND.md) — light, minimal. */
+@theme {
+  --font-sans: var(--font-satoshi), ui-sans-serif, system-ui, sans-serif;
+
+  --color-green-900: #004e3c; /* headers / nav */
+  --color-green-700: #004d3d; /* gradient start */
+  --color-green-500: #28b55f; /* primary / accent */
+  --color-green-400: #28b660; /* gradient end */
+  --color-canvas: #f6f6f6;
+  --color-subtle: #e0e0e0;
+  --color-card: #ffffff;
+  --color-ink: #212123;
+  --color-muted: #7c7c7c;
+}
+
+:root {
+  --green-900: #004e3c;
+  --green-700: #004d3d;
+  --green-500: #28b55f;
+  --green-400: #28b660;
+  --canvas: #f6f6f6;
+  --subtle: #e0e0e0;
+  --card: #ffffff;
+  --ink: #212123;
+  --muted: #7c7c7c;
+}
+
+html, body {
+  background: var(--canvas);
+  color: var(--ink);
+  font-family: var(--font-sans);
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Soft card lift (~3% shadow per BRAND.md). */
+.byki-card {
+  background: var(--card);
+  border: 1px solid #ececec;
+  border-radius: 16px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03), 0 8px 24px rgba(0, 0, 0, 0.03);
+}
+
+/* Select with a custom chevron, comfortably inset from the right edge. */
+.byki-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%237c7c7c' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.9rem center;
+  background-size: 12px;
+  padding-right: 2.5rem;
+}

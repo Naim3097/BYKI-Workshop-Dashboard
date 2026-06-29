@@ -1,0 +1,13 @@
+{
+  "name": "@byki/config",
+  "version": "1.0.0",
+  "private": true,
+  "files": [
+    "tsconfig.base.json",
+    "tailwind-preset.css"
+  ],
+  "exports": {
+    "./tsconfig.base.json": "./tsconfig.base.json",
+    "./tailwind-preset.css": "./tailwind-preset.css"
+  }
+}

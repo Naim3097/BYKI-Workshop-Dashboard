@@ -1,0 +1,37 @@
+/*
+ * @byki/config — shared Tailwind v4 theme preset.
+ *
+ * Tailwind v4 is CSS-first: an app imports Tailwind then layers this preset and
+ * overrides the per-workshop brand tokens (--accent, fonts, etc.) in its own
+ * globals.css. Keep ONLY cross-workshop primitives here; brand colours belong to
+ * each app's WorkshopConfig + globals.css.
+ */
+
+@theme {
+  /* Neutral surface scale shared by every workshop (dark-first). */
+  --color-surface-0: #0a0a0b;
+  --color-surface-1: #121214;
+  --color-surface-2: #1a1a1d;
+
+  /* Brand accent — every app MUST override --accent in its own globals.css. */
+  --color-accent: #e11d2a;
+
+  --radius-card: 1rem;
+  --radius-pill: 9999px;
+}
+
+/* Shared, brand-agnostic animation primitives. */
+@keyframes byki-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: byki-fade-up 0.5s ease both;
+}

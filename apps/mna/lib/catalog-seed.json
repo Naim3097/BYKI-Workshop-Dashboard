@@ -1,0 +1,812 @@
+{
+  "products": [
+    {
+      "id": "c1",
+      "sku": "MNA-CB-0001",
+      "name": "CVT Steel Push Belt JF011E",
+      "slug": "cvt-steel-push-belt-jf011e",
+      "category": "cvt_belt",
+      "brand": "",
+      "description": "Genuine-spec steel push belt for Jatco JF011E / RE0F10A CVTs. Hundreds of precision-ground elements riding on two laminated steel rings — the single most load-critical part in a CVT. Replace as a set with worn variator pulleys.",
+      "priceRetail": 480,
+      "priceBulk": 410,
+      "bulkMinQty": 2,
+      "specifications": {
+        "type": "Push belt",
+        "elements": "~400",
+        "ring": "Dual laminated steel",
+        "width": "24mm"
+      },
+      "compatibleVehicles": [
+        "Nissan X-Trail",
+        "Nissan Qashqai",
+        "Mitsubishi Outlander",
+        "Renault Koleos"
+      ],
+      "compatibleGearboxes": [
+        "JF011E",
+        "RE0F10A"
+      ],
+      "tags": [
+        "cvt",
+        "belt",
+        "push belt",
+        "jf011e",
+        "variator"
+      ],
+      "isFeatured": true,
+      "active": true
+    },
+    {
+      "id": "c2",
+      "sku": "MNA-CB-0002",
+      "name": "Variator Pulley Set JF015E",
+      "slug": "variator-pulley-set-jf015e",
+      "category": "cvt_belt",
+      "brand": "",
+      "description": "Matched primary + secondary variator pulley (cone) set for Jatco JF015E. Mirror-polished sheave faces restore clean ratio sweep and stop belt slip on worn units. Supplied as a balanced pair.",
+      "priceRetail": 620,
+      "priceBulk": 540,
+      "bulkMinQty": 2,
+      "specifications": {
+        "includes": "Primary + secondary cones",
+        "finish": "Mirror-polished",
+        "condition": "Remanufactured"
+      },
+      "compatibleVehicles": [
+        "Nissan Almera",
+        "Nissan Note",
+        "Suzuki Swift"
+      ],
+      "compatibleGearboxes": [
+        "JF015E",
+        "RE0F11A"
+      ],
+      "tags": [
+        "cvt",
+        "variator",
+        "pulley",
+        "jf015e"
+      ],
+      "isFeatured": true,
+      "active": true
+    },
+    {
+      "id": "v1",
+      "sku": "MNA-VB-0001",
+      "name": "CVT Valve Body Reman JF011E",
+      "slug": "cvt-valve-body-reman-jf011e",
+      "category": "valve_body",
+      "brand": "",
+      "description": "Remanufactured and dyno-tested valve body for JF011E CVTs. Restored bores, new check balls and recalibrated line-pressure circuit — cures harsh engagement, judder and slow ratio response.",
+      "priceRetail": 1150,
+      "priceBulk": 980,
+      "bulkMinQty": 1,
+      "specifications": {
+        "condition": "Remanufactured",
+        "tested": "Dyno-tested",
+        "solenoids": "Included"
+      },
+      "compatibleVehicles": [
+        "Nissan X-Trail",
+        "Mitsubishi Outlander"
+      ],
+      "compatibleGearboxes": [
+        "JF011E",
+        "RE0F10A"
+      ],
+      "tags": [
+        "valve body",
+        "cvt",
+        "jf011e",
+        "reman"
+      ],
+      "isFeatured": true,
+      "active": true
+    },
+    {
+      "id": "v2",
+      "sku": "MNA-VB-0002",
+      "name": "Line Pressure Solenoid Set",
+      "slug": "line-pressure-solenoid-set",
+      "category": "valve_body",
+      "brand": "",
+      "description": "Replacement linear solenoid set for CVT and AT valve bodies. Matched resistance and flow for consistent pressure control. Sold as a 3-piece set.",
+      "priceRetail": 240,
+      "priceBulk": 195,
+      "bulkMinQty": 4,
+      "specifications": {
+        "pieces": "3 solenoids",
+        "type": "Linear (variable force)",
+        "resistance": "5.0Ω ±0.3"
+      },
+      "compatibleVehicles": [
+        "Nissan",
+        "Toyota",
+        "Mitsubishi"
+      ],
+      "compatibleGearboxes": [
+        "JF011E",
+        "JF015E",
+        "K313"
+      ],
+      "tags": [
+        "solenoid",
+        "valve body",
+        "pressure"
+      ],
+      "isFeatured": false,
+      "active": true
+    },
+    {
+      "id": "t1",
+      "sku": "MNA-TC-0001",
+      "name": "Torque Converter Reman A750E",
+      "slug": "torque-converter-reman-a750e",
+      "category": "torque_conv",
+      "brand": "",
+      "description": "Remanufactured torque converter with new lock-up clutch lining and balanced impeller for A750E transmissions. Bench-tested for leak-down and concentricity. Eliminates lock-up shudder and stall-speed drift.",
+      "priceRetail": 540,
+      "priceBulk": 460,
+      "bulkMinQty": 1,
+      "specifications": {
+        "condition": "Remanufactured",
+        "lockup": "New lining",
+        "tested": "Leak + balance"
+      },
+      "compatibleVehicles": [
+        "Toyota Hilux",
+        "Toyota Fortuner",
+        "Lexus GX470"
+      ],
+      "compatibleGearboxes": [
+        "A750E",
+        "A750F"
+      ],
+      "tags": [
+        "torque converter",
+        "lockup",
+        "a750e",
+        "reman"
+      ],
+      "isFeatured": true,
+      "active": true
+    },
+    {
+      "id": "1",
+      "sku": "DT-CP-0001",
+      "name": "AT Clutch Friction Plate 3.5mm",
+      "slug": "at-clutch-friction-plate-3-5mm",
+      "category": "clutch_plate",
+      "brand": "",
+      "description": "High-performance automatic transmission clutch friction plate. 3.5mm thickness, OEM-equivalent material composition for reliable engagement and long service life.",
+      "priceRetail": 28,
+      "priceBulk": 22,
+      "bulkMinQty": 10,
+      "specifications": {
+        "thickness": "3.5mm",
+        "material": "Organic Friction",
+        "diameter": "165mm"
+      },
+      "compatibleVehicles": [
+        "Toyota Hilux",
+        "Toyota Fortuner",
+        "Isuzu D-Max"
+      ],
+      "compatibleGearboxes": [
+        "A750E",
+        "A750F"
+      ],
+      "tags": [
+        "clutch",
+        "friction",
+        "a750e"
+      ],
+      "isFeatured": true,
+      "active": true
+    },
+    {
+      "id": "2",
+      "sku": "DT-CP-0002",
+      "name": "HD Clutch Disc A750E",
+      "slug": "hd-clutch-disc-a750e",
+      "category": "clutch_plate",
+      "brand": "",
+      "description": "Heavy-duty clutch disc designed for A750E transmissions. Enhanced friction material for towing and high-load applications.",
+      "priceRetail": 35,
+      "priceBulk": 28,
+      "bulkMinQty": 10,
+      "specifications": {
+        "thickness": "4.0mm",
+        "material": "Kevlar Blend",
+        "diameter": "170mm"
+      },
+      "compatibleVehicles": [
+        "Toyota Land Cruiser",
+        "Lexus GX470"
+      ],
+      "compatibleGearboxes": [
+        "A750E"
+      ],
+      "tags": [
+        "clutch",
+        "heavy-duty",
+        "a750e"
+      ],
+      "isFeatured": false,
+      "active": true
+    },
+    {
+      "id": "3",
+      "sku": "DT-SP-0001",
+      "name": "Steel Separator Plate 1.8mm",
+      "slug": "steel-separator-plate-1-8mm",
+      "category": "steel_plate",
+      "brand": "",
+      "description": "Precision-ground steel separator plate for automatic transmissions. Hardened and tempered for consistent performance.",
+      "priceRetail": 16,
+      "priceBulk": 12,
+      "bulkMinQty": 20,
+      "specifications": {
+        "thickness": "1.8mm",
+        "material": "Hardened Steel",
+        "finish": "Phosphate coated"
+      },
+      "compatibleVehicles": [
+        "Toyota Hilux",
+        "Mitsubishi Triton"
+      ],
+      "compatibleGearboxes": [
+        "A750E",
+        "A340"
+      ],
+      "tags": [
+        "steel",
+        "separator",
+        "plate"
+      ],
+      "isFeatured": false,
+      "active": true
+    },
+    {
+      "id": "4",
+      "sku": "DT-SP-0002",
+      "name": "Waved Steel Plate A340",
+      "slug": "waved-steel-plate-a340",
+      "category": "steel_plate",
+      "brand": "",
+      "description": "Waved steel plate for A340 series transmissions. The wave pattern provides controlled clutch engagement.",
+      "priceRetail": 20,
+      "priceBulk": 15,
+      "bulkMinQty": 20,
+      "specifications": {
+        "thickness": "2.0mm",
+        "material": "Spring Steel",
+        "pattern": "Waved"
+      },
+      "compatibleVehicles": [
+        "Toyota Hilux",
+        "Toyota 4Runner"
+      ],
+      "compatibleGearboxes": [
+        "A340"
+      ],
+      "tags": [
+        "steel",
+        "waved",
+        "a340"
+      ],
+      "isFeatured": false,
+      "active": true
+    },
+    {
+      "id": "5",
+      "sku": "DT-AF-0001",
+      "name": "ATF Inline Filter Universal",
+      "slug": "atf-inline-filter-universal",
+      "category": "auto_filter",
+      "brand": "",
+      "description": "Universal inline ATF filter for automatic transmissions. Catches fine particles and extends transmission fluid life.",
+      "priceRetail": 12,
+      "priceBulk": 9,
+      "bulkMinQty": 25,
+      "specifications": {
+        "type": "Inline",
+        "micron": "25μm",
+        "connection": "3/8\" barb"
+      },
+      "compatibleVehicles": [
+        "Universal"
+      ],
+      "compatibleGearboxes": [
+        "Universal"
+      ],
+      "tags": [
+        "filter",
+        "inline",
+        "universal"
+      ],
+      "isFeatured": true,
+      "active": true
+    },
+    {
+      "id": "6",
+      "sku": "DT-AF-0002",
+      "name": "Pan Transmission Filter Kit",
+      "slug": "pan-transmission-filter-kit",
+      "category": "auto_filter",
+      "brand": "",
+      "description": "Complete pan filter kit with gasket. Direct replacement for OEM transmission pan filters.",
+      "priceRetail": 25,
+      "priceBulk": 19,
+      "bulkMinQty": 15,
+      "specifications": {
+        "type": "Pan filter",
+        "includes": "Filter + gasket",
+        "material": "Felt/Metal mesh"
+      },
+      "compatibleVehicles": [
+        "Toyota Hilux",
+        "Toyota Fortuner"
+      ],
+      "compatibleGearboxes": [
+        "A750E",
+        "A750F"
+      ],
+      "tags": [
+        "filter",
+        "pan",
+        "kit"
+      ],
+      "isFeatured": false,
+      "active": true
+    },
+    {
+      "id": "7",
+      "sku": "DT-FD-0001",
+      "name": "Forward Clutch Drum A750E",
+      "slug": "forward-clutch-drum-a750e",
+      "category": "forward_drum",
+      "brand": "",
+      "description": "Complete forward clutch drum assembly for A750E transmissions. Precision machined with new bushing pre-installed.",
+      "priceRetail": 120,
+      "priceBulk": 95,
+      "bulkMinQty": 3,
+      "specifications": {
+        "material": "Cast Aluminum",
+        "bushing": "Pre-installed",
+        "splines": "36T"
+      },
+      "compatibleVehicles": [
+        "Toyota Hilux",
+        "Toyota Fortuner",
+        "Lexus GX470"
+      ],
+      "compatibleGearboxes": [
+        "A750E"
+      ],
+      "tags": [
+        "drum",
+        "forward",
+        "a750e",
+        "assembly"
+      ],
+      "isFeatured": true,
+      "active": true
+    },
+    {
+      "id": "8",
+      "sku": "DT-FD-0002",
+      "name": "Forward Drum Shell Assembly",
+      "slug": "forward-drum-shell-assembly",
+      "category": "forward_drum",
+      "brand": "",
+      "description": "Replacement drum shell for various automatic transmissions. Supplied without internal components.",
+      "priceRetail": 105,
+      "priceBulk": 85,
+      "bulkMinQty": 3,
+      "specifications": {
+        "material": "Steel",
+        "finish": "Machined",
+        "weight": "1.2kg"
+      },
+      "compatibleVehicles": [
+        "Toyota Hilux",
+        "Nissan Navara"
+      ],
+      "compatibleGearboxes": [
+        "A340",
+        "RE5R05A"
+      ],
+      "tags": [
+        "drum",
+        "shell",
+        "assembly"
+      ],
+      "isFeatured": false,
+      "active": true
+    },
+    {
+      "id": "9",
+      "sku": "DT-OP-0001",
+      "name": "Front Oil Pump Body A340",
+      "slug": "front-oil-pump-body-a340",
+      "category": "oil_pump",
+      "brand": "",
+      "description": "Remanufactured front oil pump body for A340 transmissions. Restored to OEM specifications with new seals.",
+      "priceRetail": 150,
+      "priceBulk": 120,
+      "bulkMinQty": 2,
+      "specifications": {
+        "type": "Front pump body",
+        "condition": "Remanufactured",
+        "seals": "Included"
+      },
+      "compatibleVehicles": [
+        "Toyota Hilux",
+        "Toyota 4Runner"
+      ],
+      "compatibleGearboxes": [
+        "A340"
+      ],
+      "tags": [
+        "oil pump",
+        "front",
+        "a340",
+        "reman"
+      ],
+      "isFeatured": true,
+      "active": true
+    },
+    {
+      "id": "10",
+      "sku": "DT-OP-0002",
+      "name": "Oil Pump Gear Set",
+      "slug": "oil-pump-gear-set",
+      "category": "oil_pump",
+      "brand": "",
+      "description": "Replacement inner and outer gear set for transmission oil pumps. Hardened steel construction.",
+      "priceRetail": 85,
+      "priceBulk": 68,
+      "bulkMinQty": 5,
+      "specifications": {
+        "type": "Gear set (inner + outer)",
+        "material": "Hardened Steel"
+      },
+      "compatibleVehicles": [
+        "Toyota Hilux",
+        "Mitsubishi Triton"
+      ],
+      "compatibleGearboxes": [
+        "A750E",
+        "A340"
+      ],
+      "tags": [
+        "oil pump",
+        "gears"
+      ],
+      "isFeatured": false,
+      "active": true
+    },
+    {
+      "id": "11",
+      "sku": "DT-PS-0001",
+      "name": "Bonded Piston Seal Kit A750E",
+      "slug": "bonded-piston-seal-kit-a750e",
+      "category": "piston_seal",
+      "brand": "",
+      "description": "Complete bonded piston seal kit for A750E automatic transmissions. Includes all required piston seals for a full rebuild.",
+      "priceRetail": 14,
+      "priceBulk": 10,
+      "bulkMinQty": 20,
+      "specifications": {
+        "pieces": "6 seals",
+        "material": "Viton rubber bonded to steel",
+        "type": "Bonded"
+      },
+      "compatibleVehicles": [
+        "Toyota Hilux",
+        "Toyota Fortuner",
+        "Lexus GX470"
+      ],
+      "compatibleGearboxes": [
+        "A750E"
+      ],
+      "tags": [
+        "piston",
+        "seal",
+        "bonded",
+        "a750e"
+      ],
+      "isFeatured": false,
+      "active": true
+    },
+    {
+      "id": "12",
+      "sku": "DT-PS-0002",
+      "name": "D-Ring Seal Assortment",
+      "slug": "d-ring-seal-assortment",
+      "category": "piston_seal",
+      "brand": "",
+      "description": "Assorted D-ring seals for automatic transmission hydraulic circuits. Multiple sizes for common applications.",
+      "priceRetail": 10,
+      "priceBulk": 7.5,
+      "bulkMinQty": 30,
+      "specifications": {
+        "pieces": "24 assorted",
+        "material": "NBR rubber",
+        "sizes": "Mixed (12mm–45mm)"
+      },
+      "compatibleVehicles": [
+        "Universal"
+      ],
+      "compatibleGearboxes": [
+        "Universal"
+      ],
+      "tags": [
+        "seal",
+        "d-ring",
+        "assortment"
+      ],
+      "isFeatured": false,
+      "active": true
+    },
+    {
+      "id": "13",
+      "sku": "DT-OK-0001",
+      "name": "Master Rebuild Kit A750E",
+      "slug": "master-rebuild-kit-a750e",
+      "category": "overhaul_kit",
+      "brand": "",
+      "description": "Complete master overhaul kit for A750E automatic transmissions. Includes all frictions, steels, seals, gaskets, and bushings needed for a full rebuild.",
+      "priceRetail": 250,
+      "priceBulk": 195,
+      "bulkMinQty": 2,
+      "specifications": {
+        "includes": "Frictions, steels, seals, gaskets, bushings",
+        "coverage": "Full overhaul"
+      },
+      "compatibleVehicles": [
+        "Toyota Hilux",
+        "Toyota Fortuner",
+        "Lexus GX470"
+      ],
+      "compatibleGearboxes": [
+        "A750E"
+      ],
+      "tags": [
+        "overhaul",
+        "rebuild",
+        "master",
+        "a750e",
+        "complete"
+      ],
+      "isFeatured": true,
+      "active": true
+    },
+    {
+      "id": "14",
+      "sku": "DT-OK-0002",
+      "name": "Banner Kit A340",
+      "slug": "banner-kit-a340",
+      "category": "overhaul_kit",
+      "brand": "",
+      "description": "Gasket and seal kit (banner kit) for A340 transmissions. Covers all external and internal sealing surfaces.",
+      "priceRetail": 160,
+      "priceBulk": 128,
+      "bulkMinQty": 3,
+      "specifications": {
+        "includes": "Gaskets, O-rings, lip seals, pan gasket",
+        "coverage": "Seals only"
+      },
+      "compatibleVehicles": [
+        "Toyota Hilux",
+        "Toyota 4Runner"
+      ],
+      "compatibleGearboxes": [
+        "A340"
+      ],
+      "tags": [
+        "banner",
+        "gasket",
+        "seal",
+        "a340"
+      ],
+      "isFeatured": false,
+      "active": true
+    },
+    {
+      "id": "15",
+      "sku": "DT-LB-0001",
+      "name": "ATF Dexron VI 1L",
+      "slug": "atf-dexron-vi-1l",
+      "category": "lubricants",
+      "brand": "",
+      "description": "Premium automatic transmission fluid meeting Dexron VI specifications. Suitable for a wide range of automatic transmissions.",
+      "priceRetail": 18,
+      "priceBulk": 14,
+      "bulkMinQty": 20,
+      "specifications": {
+        "volume": "1 Litre",
+        "spec": "Dexron VI",
+        "type": "Fully synthetic"
+      },
+      "compatibleVehicles": [
+        "Universal"
+      ],
+      "compatibleGearboxes": [
+        "Universal"
+      ],
+      "tags": [
+        "atf",
+        "dexron",
+        "fluid",
+        "lubricant"
+      ],
+      "isFeatured": true,
+      "active": true
+    },
+    {
+      "id": "16",
+      "sku": "DT-LB-0002",
+      "name": "CVT Fluid NS-3 1L",
+      "slug": "cvt-fluid-ns3-1l",
+      "category": "lubricants",
+      "brand": "",
+      "description": "CVT-specific transmission fluid compatible with Nissan NS-3 specification. For continuously variable transmissions.",
+      "priceRetail": 22,
+      "priceBulk": 17,
+      "bulkMinQty": 20,
+      "specifications": {
+        "volume": "1 Litre",
+        "spec": "NS-3 Compatible",
+        "type": "Fully synthetic"
+      },
+      "compatibleVehicles": [
+        "Nissan Navara",
+        "Nissan X-Trail",
+        "Mitsubishi Outlander"
+      ],
+      "compatibleGearboxes": [
+        "JF015E",
+        "JF011E"
+      ],
+      "tags": [
+        "cvt",
+        "fluid",
+        "ns-3",
+        "nissan"
+      ],
+      "isFeatured": false,
+      "active": true
+    }
+  ],
+  "inventory": [
+    {
+      "productId": "c1",
+      "stockQty": 12,
+      "reorderLevel": 4,
+      "updatedAt": ""
+    },
+    {
+      "productId": "c2",
+      "stockQty": 6,
+      "reorderLevel": 3,
+      "updatedAt": ""
+    },
+    {
+      "productId": "v1",
+      "stockQty": 4,
+      "reorderLevel": 2,
+      "updatedAt": ""
+    },
+    {
+      "productId": "v2",
+      "stockQty": 28,
+      "reorderLevel": 8,
+      "updatedAt": ""
+    },
+    {
+      "productId": "t1",
+      "stockQty": 9,
+      "reorderLevel": 3,
+      "updatedAt": ""
+    },
+    {
+      "productId": "1",
+      "stockQty": 150,
+      "reorderLevel": 20,
+      "updatedAt": ""
+    },
+    {
+      "productId": "2",
+      "stockQty": 85,
+      "reorderLevel": 15,
+      "updatedAt": ""
+    },
+    {
+      "productId": "3",
+      "stockQty": 200,
+      "reorderLevel": 30,
+      "updatedAt": ""
+    },
+    {
+      "productId": "4",
+      "stockQty": 120,
+      "reorderLevel": 20,
+      "updatedAt": ""
+    },
+    {
+      "productId": "5",
+      "stockQty": 300,
+      "reorderLevel": 50,
+      "updatedAt": ""
+    },
+    {
+      "productId": "6",
+      "stockQty": 95,
+      "reorderLevel": 15,
+      "updatedAt": ""
+    },
+    {
+      "productId": "7",
+      "stockQty": 25,
+      "reorderLevel": 5,
+      "updatedAt": ""
+    },
+    {
+      "productId": "8",
+      "stockQty": 18,
+      "reorderLevel": 5,
+      "updatedAt": ""
+    },
+    {
+      "productId": "9",
+      "stockQty": 15,
+      "reorderLevel": 5,
+      "updatedAt": ""
+    },
+    {
+      "productId": "10",
+      "stockQty": 30,
+      "reorderLevel": 8,
+      "updatedAt": ""
+    },
+    {
+      "productId": "11",
+      "stockQty": 250,
+      "reorderLevel": 40,
+      "updatedAt": ""
+    },
+    {
+      "productId": "12",
+      "stockQty": 400,
+      "reorderLevel": 60,
+      "updatedAt": ""
+    },
+    {
+      "productId": "13",
+      "stockQty": 20,
+      "reorderLevel": 5,
+      "updatedAt": ""
+    },
+    {
+      "productId": "14",
+      "stockQty": 35,
+      "reorderLevel": 8,
+      "updatedAt": ""
+    },
+    {
+      "productId": "15",
+      "stockQty": 500,
+      "reorderLevel": 50,
+      "updatedAt": ""
+    },
+    {
+      "productId": "16",
+      "stockQty": 3,
+      "reorderLevel": 50,
+      "updatedAt": ""
+    }
+  ]
+}
