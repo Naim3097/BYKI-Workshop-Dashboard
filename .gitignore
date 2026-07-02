@@ -28,5 +28,6 @@
 Thumbs.db
 *.log
 
-# Original template drop (nested git repo) — local reference only, not tracked
-Overhaulinyard/
+# Original template drop (nested git repo) — local reference only, not tracked.
+# Root-anchored so it does NOT also match apps/overhaulinyard (case-insensitive FS).
+/Overhaulinyard/
