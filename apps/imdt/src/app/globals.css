@@ -1,0 +1,132 @@
+@import "tailwindcss";
+
+/* Tailwind v4 ignores node_modules by default; scan @byki/core so the shared
+   dashboard/UI/commerce component classes are not purged. */
+@source "../../../../packages/core/src/**/*.{ts,tsx}";
+
+/* ── Tailwind v4 theme ──────────────── */
+/* Exo 2 (self-hosted via next/font, see layout.tsx → --font-exo) */
+@theme {
+  --font-sans: var(--font-exo), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-exo), ui-sans-serif, sans-serif;
+}
+
+/* ── IM Dynamic Torque palette (from the logo: navy field + red slash) ── */
+:root {
+  --bg: #0a1226;          /* deep navy base (logo field) */
+  --bg-raised: #101d3d;   /* raised surface */
+  --bg-card: #14264f;     /* card */
+  --fg: #f5f7ff;          /* white text */
+  --fg-muted: #9fb0d0;    /* muted blue-grey */
+  --border: #ffffff14;
+  --accent: #e01f2b;      /* IMDT red (logo slash) */
+  --accent-2: #b3141b;    /* darker red — hover/gradient */
+  --accent-glow: #e01f2b33;
+  --danger: #ff5a5a;
+  --warning: #ffaa00;
+}
+
+body {
+  background:
+    radial-gradient(1200px 700px at 50% -12%, #14264f 0%, transparent 55%),
+    var(--bg);
+  color: var(--fg);
+  font-family: var(--font-sans);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  letter-spacing: -0.01em;
+}
+
+/* Industrial display heading — uppercase, tight, bold */
+.display {
+  font-family: var(--font-display);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  line-height: 0.98;
+}
+
+/* ── Glass card surface ───────────────────────── */
+.glass {
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+.glass-hover:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+/* Red-tinted feature card */
+.card-red {
+  background: linear-gradient(160deg, rgba(224, 31, 43, 0.1), rgba(224, 31, 43, 0.02) 60%, transparent);
+  border: 1px solid rgba(224, 31, 43, 0.18);
+}
+
+/* ── Status dot pulse ───────────────── */
+@keyframes glow-pulse {
+  0%, 100% { box-shadow: 0 0 4px var(--accent); opacity: 1; }
+  50% { box-shadow: 0 0 12px var(--accent); opacity: 0.7; }
+}
+.status-dot { animation: glow-pulse 2s ease-in-out infinite; }
+
+/* ── Fade-up ────────────────────────── */
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-up { animation: fade-up 0.5s ease-out both; }
+
+/* ── Serif italic accent (editorial font mix) ── */
+.accent-serif {
+  font-family: var(--font-serif), Georgia, 'Times New Roman', serif;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none; /* keep natural case inside uppercase .display headings */
+}
+
+/* ── Scroll-reveal — smooth section entrances (Chrome/Edge).
+      Degrades to fully visible where unsupported. ── */
+@keyframes reveal {
+  from { opacity: 0; transform: translateY(26px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@supports (animation-timeline: view()) {
+  .reveal {
+    opacity: 0;
+    animation: reveal linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 42%;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1 !important; animation: none !important; }
+}
+
+/* ── Carbon grid backdrop ───────────── */
+.bg-grid {
+  background-image:
+    linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+  background-size: 44px 44px;
+}
+.bg-hero-glow {
+  background:
+    radial-gradient(ellipse 70% 50% at 50% 0%, rgba(224,31,43,0.16) 0%, transparent 60%);
+}
+
+/* ── Sticky mobile CTA safe area ─────── */
+.safe-bottom { padding-bottom: env(safe-area-inset-bottom); }
+
+/* ── Scrollbar ──────────────────────── */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.12); border-radius: 4px; }
+
+html { scroll-behavior: smooth; }
